@@ -1,0 +1,13 @@
+site_name: HDF5 Custom Properties
+nav:
+    - Introduction: index.md
+
+theme:
+    name: mkdocs
+    include_sidebar: true
+
+markdown_extensions:
+    - footnotes
+    - toc:
+        permalink: "#"
+        separator: "-"
