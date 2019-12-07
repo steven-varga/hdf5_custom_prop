@@ -1,4 +1,13 @@
 
+#Status: **resolved**
+
+[commit 4b2560fa81f](https://bitbucket.hdfgroup.org/projects/HDFFV/repos/hdf5/commits/4b2560fa81fa76a5795a394e9af3da15aa9dab18)
+commit '3664cea5d6f87a7e8e708191f9cea36077424a80':
+  Add two missing calls to H5I_dec_ref for new dapl_id
+  Community-proposed fix
+
+**no credit given**
+
 #HDF5 custom properties
 
 HDF5 CAPI provide extensive library calls to manipulate property lists however there are some inconsistencies between the implementation and documentation: **Dataset Access Property List** doesn't get copied into the dataset internal structure when creating or opening a dataset -- unike dataset control property list. 
@@ -178,7 +187,7 @@ H5D__create(H5F_t *file, hid_t type_id, const H5S_t *space, hid_t dcpl_id,
 }
 ```
 
-## Two Birds with one stone
+## Two Birds with One Stone
 Grep-ing the entire project indeed there are only two references to `H5D__new`, therefor it seems to be a good 
 candidate for updating `dapl` related information, similarly to `dcpl`
 
