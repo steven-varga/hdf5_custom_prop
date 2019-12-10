@@ -6,7 +6,9 @@ commit '3664cea5d6f87a7e8e708191f9cea36077424a80':
   Add two missing calls to H5I_dec_ref for new dapl_id
   Community-proposed fix
 
-**no credit given**
+**credited:**[on HDFForum](https://forum.hdfgroup.org/t/why-do-filters-have-an-upper-limit-for-cd-nelmts/6251/14)
+Thanks for Elena Pourmal for acting on the report, and Chris Hogan for reviewing and incorporating the suggested modifications and Mark Miller (LLNL) for confirming the issue.
+
 
 #HDF5 custom properties
 
